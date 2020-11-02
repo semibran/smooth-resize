@@ -1,5 +1,103 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	height: 100vh;
+	background: #111111;
+}
+
+.box {
+	max-width: 440px;
+	margin: 48px auto;
+	padding: 0.05px;
+	border-radius: 4px;
+	border: thin solid #444;
+	background: #222;
+	color: #999;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box-tabs {
+	display: flex;
+	justify-content: space-around;
+}
+
+.box-tab {
+	flex: 1;
+	padding: 16px 0;
+	color: #666;
+	font-size: 0.875em;
+	text-align: center;
+	transition: 0.2s;
+}
+
+.box-tab:not(:last-child) {
+	border-right: thin solid #444;
+}
+
+.box-tab.-select {
+	color: white;
+	font-weight: bold;
+	border-bottom-color: transparent;
+}
+
+.box-tab:not(.-select) {
+	background: #1b1b1b;
+	border-bottom: thin solid #444;
+}
+
+.box-tab:not(.-select):hover {
+	background: #181818;
+	color: white;
+	cursor: pointer;
+}
+
+.box-tab.-animate {
+	cursor: wait;
+}
+
+.box-wrap {
+	display: flex;
+	flex-direction: column;
+	margin: 24px;
+	overflow: hidden;
+	transition: 0.25s height;
+}
+
+.box-content {
+	transition: 0.25s opacity;
+	opacity: 1;
+	display: none;
+}
+
+.box-content.-select {
+	display: block;
+}
+
+.box-content.-enter {
+	order: 2;
+	opacity: 0;
+}
+
+.box-content.-exit {
+	order: 1;
+	opacity: 0;
+}
+
+.box-heading {
+	color: white;
+	padding-bottom: 10px;
+	border-bottom: thin solid #666;
+	margin-bottom: 10px;
+}
+
+.box-text {
+	line-height: 1.625;
+}
+
+.box-text:not(:last-child) {
+	margin-bottom: 1em;
 }
