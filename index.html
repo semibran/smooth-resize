@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+
+<head>
+	<title>smooth-resize</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="smooth box resizing demo" />
+	<meta name="author" content="semibran (Brandon Semilla)" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,maximum-scale=1" />
+	<link href="./style.css" rel="stylesheet" />
+	<script defer src="./index.js"></script>
+</head>
+
+<body>
+	<div class="box">
+		<div class="box-tabs">
+			<div id="tab1" class="box-tab -select">Tab 1</div>
+			<div id="tab2" class="box-tab">Tab 2</div>
+			<div id="tab3" class="box-tab">Tab 3</div>
+		</div>
+		<div class="box-wrap">
+			<section class="box-content -tab1 -select">
+				<h1 class="box-heading">Smooth resizing</h1>
+				<p class="box-text">Click on a tab, and the box's height will transition smoothly to match the size of its new children.</p>
+			</section>
+			<section class="box-content -tab2">
+				<h1 class="box-heading">Hello from Tab 2</h1>
+				<p class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ad voluptatibus libero asperiores. Debitis soluta amet consectetur, minus eum, cupiditate ratione in optio consequatur recusandae, possimus nisi quisquam corrupti, veniam.</p>
+				<p class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore maxime cumque, dolorem nesciunt velit eveniet voluptates quod rem quam eos, voluptas. Dolore asperiores sunt laudantium hic perferendis corporis, quae esse!</p>
+			</section>
+			<section class="box-content -tab3">
+				<h1 class="box-heading">Hello from Tab 3</h1>
+				<p class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat temporibus consequuntur nisi commodi nesciunt fugit mollitia itaque nam beatae doloremque natus amet enim voluptas praesentium perspiciatis tenetur, laudantium omnis ipsum.</p>
+			</section>
+		</div>
+	</div>
+</body>
+
+</html>
